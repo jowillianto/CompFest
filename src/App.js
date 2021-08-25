@@ -46,7 +46,7 @@ export default class App extends React.Component{
       result   : "",
       data     : null
     }
-    this.page       = 'https://realtimefeedback.netlify.app'
+    this.page       = 'https://realtimefeedback.netlify.app/'
     this.oAuth      = {
       web:{
         client_id :"678299522458-1pgpvioufekpgpe2nt0ou6j90949u1ch.apps.googleusercontent.com",
@@ -57,7 +57,7 @@ export default class App extends React.Component{
         client_secret:"ChXeispm2Pvuy9HuPOe9jOID"
       }
     }
-    this.token      = window.location.href !== `${this.page}/` ? window.location.href.split('&')[1].split('=')[1] : ""
+    this.token      = window.location.href !== `${this.page}` ? window.location.href.split('&')[1].split('=')[1] : ""
     this.project_id = "678299522458"
     this.end_id     = "5120152971669143552"
     this.apiKey     = "AIzaSyANjzxDu0GEUoPtPdwOttomqXfFwIpukGQ"
