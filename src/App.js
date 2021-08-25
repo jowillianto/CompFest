@@ -46,15 +46,15 @@ export default class App extends React.Component{
       result   : "",
       data     : null
     }
-    this.page       = 'https://realtimefeedback.netlify.app/'
+    this.page       = 'https://realtimefeedback.netlify.app'
     this.oAuth      = {
       web:{
-        client_id :"678299522458-p1jhirqifo8bsjhnqn474jlmrptggekf.apps.googleusercontent.com",
+        client_id :"678299522458-1pgpvioufekpgpe2nt0ou6j90949u1ch.apps.googleusercontent.com",
         project_id:"emotion-detection-323819",
         auth_uri:"https://accounts.google.com/o/oauth2/auth",
         token_uri:"https://oauth2.googleapis.com/token",
         auth_provider_x509_cert_url:"https://www.googleapis.com/oauth2/v1/certs",
-        client_secret:"Y4-mxcwF235-Ttsrzo9ZQcLG"
+        client_secret:"ChXeispm2Pvuy9HuPOe9jOID"
       }
     }
     this.token      = window.location.href !== this.page ? window.location.href.split('&')[1].split('=')[1] : ""
